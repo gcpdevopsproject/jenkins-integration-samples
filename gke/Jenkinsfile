@@ -32,7 +32,6 @@ pipeline {
 	stage("Deploy to prod") {
             agent {
     	        kubernetes {
-      		    cloud 'kubernetes'
 		    yamlFile 'gke/jenkins/gke-deploy-pod.yaml'
 		}
             }
