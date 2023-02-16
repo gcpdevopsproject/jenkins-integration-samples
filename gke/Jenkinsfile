@@ -33,7 +33,6 @@ pipeline {
             agent {
     	        kubernetes {
       		    cloud 'kubernetes'
-      		    inheritFrom 'gke-deploy'
 		    yamlFile 'gke/jenkins/gke-deploy-pod.yaml'
 		}
             }
